@@ -1,0 +1,20 @@
+# For full config options, check the docs: docs.serverless.com
+
+service: stackimpact-spike  
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  timeout: 10 # Avoid cold start timeouts.
+  region: ${opt:region}
+  stage: ${opt:stage}
+
+functions:
+  main:
+    handler: index.handler
+    memorySize: 256
+    events:
+      - http: ANY {proxy+}
+
+plugins:
+  - serverless-offline

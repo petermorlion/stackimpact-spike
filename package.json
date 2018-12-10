@@ -1,0 +1,25 @@
+{
+  "name": "stackimpact-spike",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "serverless": "^1.34.1",
+    "serverless-offline": "^3.31.3",
+    "stackimpact": "^1.3.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petermorlion/stackimpact-spike.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petermorlion/stackimpact-spike/issues"
+  },
+  "homepage": "https://github.com/petermorlion/stackimpact-spike#readme"
+}
